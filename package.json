@@ -1,6 +1,6 @@
 {
   "name": "w3tech-cronloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cronloader for w3tech boilerplate",
   "main": "index.js",
   "scripts": {

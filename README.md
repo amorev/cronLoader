@@ -38,6 +38,31 @@ export const cronLoader: MicroframeworkLoader = (settings?: MicroframeworkSettin
 
 ```
 
+And in, near to your cronMethod, you can use decorator
+
+```typescript
+import { CronLoader } from 'w3tech-cronloader';
+import cronMethod = CronLoader.cronMethod;
+
+export class Handler {
+    @cronMethod({
+        runOnInit: true,
+        cronTime: '* * * * * *',
+    })
+    public test(): void {
+        console.log(1);
+    }
+}
+```
+
+options in CronMethod
+cronTime: cron syntax for runing task
+runOnInit: run this command on the beginning
+arguments: array of arguments for your method;
+
+
+## Using DI
+
 runCron method has signature
 ```typescript
 function runCron(getInstance?: (target: Object) => any);
