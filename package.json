@@ -1,0 +1,22 @@
+{
+  "name": "w3tech-cronloader",
+  "version": "1.0.0",
+  "description": "cronloader for w3tech boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amorev/cronLoader.git"
+  },
+  "author": "Anton Morev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amorev/cronLoader/issues"
+  },
+  "homepage": "https://github.com/amorev/cronLoader#readme",
+  "dependencies": {
+    "cron": "1.8.2"
+  }
+}
