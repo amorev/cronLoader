@@ -1,10 +1,12 @@
 {
   "name": "w3tech-cronloader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cronloader for w3tech boilerplate",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,12 @@
   },
   "homepage": "https://github.com/amorev/cronLoader#readme",
   "dependencies": {
+    "@types/cron": "1.7.2",
     "cron": "1.8.2"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "8.0.1",
+    "typescript": "^2.5.3"
   }
 }
